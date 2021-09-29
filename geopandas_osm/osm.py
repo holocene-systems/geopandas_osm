@@ -88,7 +88,7 @@ def query_osm(typ, bbox=None, recurse=None, tags='', raw=False,
 
     """
     url = _build_url(typ, bbox, recurse, tags, meta)
-
+    print(url)
     # TODO: Raise on non-200 (or 400-599)
     with urlopen(url) as response:
         content = response.read()

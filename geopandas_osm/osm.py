@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 import fiona.crs
 import geopandas as gpd
-from urllib.parse import iurlopen,urlencode
+from urllib.parse import urlopen,urlencode
 import pandas as pd
 from shapely.geometry import Point, LineString
 from six import string_types
